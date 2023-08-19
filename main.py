@@ -19,7 +19,6 @@ def thanosSort(randomList, totalNum):
     i = 0
     while i < toRemove:
         indexToRemove = random.randint(0,len(randomList))
-       #print(f"Removed {randomList[indexToRemove]} from index {indexToRemove}. Items remaining {len(randomList)} ")
         randomList.pop(indexToRemove-1)
         i+=1
     checkIfSorted(randomList, len(randomList))
